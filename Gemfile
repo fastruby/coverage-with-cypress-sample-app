@@ -64,6 +64,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "simplecov", require: false
+  gem "coverband"
 end
 
 gem "minitest", "~> 5.0"

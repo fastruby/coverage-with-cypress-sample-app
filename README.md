@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Run `rails db:migrate` to create the DB
 
-Things you may want to cover:
+Run `rails test` to run the Minitest test suite
 
-* Ruby version
+Check the coverage report: ~35%
 
-* System dependencies
+Run `RAILS_ENV=test rails coverband:coverage_server` to start the Coverband server in one terminal
 
-* Configuration
+Run `rails cypress:run` to run Cypress tests
 
-* Database creation
+Run `rails simplecov_json_report` to extract the code coverage from Coveband into a `cypress_coverage.json` (note that this command will show ~74% coverage, but it's not filtering files we don't want to count for the real coverage)
 
-* Database initialization
+Run `rails coverage:merge` to merge both Minitest and Cypress results into one
 
-* How to run the test suite
+Check the coverage report: ~52%
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+NOTE: Use `RAILS_ENV=test rails coverband:clear` to clear Coverband's coverage if needed
