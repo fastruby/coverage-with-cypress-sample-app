@@ -67,3 +67,4 @@ group :test do
 end
 
 gem "minitest", "~> 5.0"
+gem "cypress-on-rails", "~> 1.0"
