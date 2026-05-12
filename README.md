@@ -8,6 +8,8 @@ Check the coverage report: ~35%
 
 Run `RAILS_ENV=test rails coverband:coverage_server` to start the Coverband server in one terminal
 
+Run `yarn install` to install Cypress
+
 Run `rails cypress:run` to run Cypress tests
 
 Run `rails simplecov_json_report` to extract the code coverage from Coveband into a `cypress_coverage.json` (note that this command will show ~74% coverage, but it's not filtering files we don't want to count for the real coverage)
